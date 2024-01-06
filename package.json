@@ -1,6 +1,6 @@
 {
   "name": "oidc-provider",
-  "version": "8.4.3-beta",
+  "version": "8.4.3",
   "description": "OAuth 2.0 Authorization Server implementation for Node.js with OpenID Connect",
   "keywords": [
     "appauth",
@@ -44,6 +44,7 @@
   },
   "license": "MIT",
   "author": "Filip Skokan <panva.ip@gmail.com>",
+  "main": "lib/index.js",
   "files": [
     "lib"
   ],
@@ -64,7 +65,7 @@
     "jsesc": "^3.0.2",
     "koa": "^2.14.2",
     "lru-cache": "^10.1.0",
-    "nanoid": "^5.0.4",
+    "nanoid": "^3.3.7",
     "object-hash": "^3.0.0",
     "oidc-token-hash": "^5.0.3",
     "raw-body": "^2.5.2"
