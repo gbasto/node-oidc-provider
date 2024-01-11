@@ -7,7 +7,7 @@ import request from "./request.js";
 
 class RequestUriCache {
   constructor(provider) {
-    this.cache = new LRUCache({ maxSize: 100 });
+    this.cache = new LRUCache({ max: 100 });
     this.provider = provider;
   }
 

@@ -139,7 +139,7 @@ function deriveEncryptionKey(secret, length) {
 
 export default function getClient(provider) {
   const staticCache = new Map();
-  const dynamicCache = new LRUCache({ maxSize: 100 });
+  const dynamicCache = new LRUCache({ max: 10 });
   const Schema = getSchema(provider);
   const { IdToken } = provider;
   let adapter;

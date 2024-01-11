@@ -2,7 +2,7 @@ import { LRUCache } from "lru-cache";
 
 import epochTime from "../helpers/epoch_time.js";
 
-let storage = new LRUCache({ maxSize: 1000 });
+let storage = new LRUCache({ max: 1000 });
 
 function grantKeyFor(id) {
   return `grant:${id}`;
